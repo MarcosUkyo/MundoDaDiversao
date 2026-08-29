@@ -13,11 +13,6 @@
    10. Responsivo
    ========================================================= */
 
-
-/* Asterisco: seletor universal. Ele seleciona praticamente todos os elementos HTML 
-  
-*/
-
 /* 1. RESET & BASE */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -199,6 +194,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
+.service-card h3 {
+   color: var(--white); 
+  }
 .service-card {
   background: var(--dark-2);
   border-top: 4px solid var(--red);
@@ -207,7 +205,25 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 }
 .service-icon { font-size: 2rem; display: block; margin-bottom: 12px; }
 
-/* citação (diferenciais) */
+/* banner com imagem de fundo */
+.banner {
+  position: relative;
+  padding: 110px 0;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.banner-overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(36, 28, 20, .78); }
+.banner-content { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+.banner-content h2, .banner-content p { color: var(--white); }
+
+/* citação (diferenciais e depoimentos) */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.testimonials-grid blockquote { margin-top: 0; height: 100%; }
 blockquote {
   background: var(--white);
   border-left: 6px solid var(--red);
@@ -230,11 +246,16 @@ blockquote footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  list-style: decimal;
-  padding-left: 20px;
 }
-.process li { background: var(--white); border-radius: var(--radius); padding: 28px 24px 28px 10px; }
-.process li::marker { color: var(--red); font-weight: 800; font-family: 'Baloo 2', sans-serif; }
+.process li { background: var(--white); border-radius: var(--radius); padding: 28px 24px; }
+.step-num {
+  display: block;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--red);
+  margin-bottom: 6px;
+}
 
 /* galeria */
 .gallery-grid {
@@ -264,7 +285,7 @@ address strong { font-family: 'Baloo 2', sans-serif; color: var(--red); margin-r
 
 /* 9. FOOTER */
 .footer { background: var(--dark); color: #CFC4B3; padding: 56px 0 0; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; padding-bottom: 40px; }
+.footer-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 32px; padding-bottom: 40px; }
 .footer h3 { color: var(--yellow); font-size: .85rem; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 14px; }
 .footer-brand p { color: #9C9182; margin-top: 10px; max-width: 260px; }
 .footer-nav ul, .footer-contact p { display: flex; flex-direction: column; gap: 10px; }
