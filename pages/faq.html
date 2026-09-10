@@ -40,7 +40,31 @@
 
 <main id="conteudo">
 
-<!-- COLOCAR CONTEUDO AQUI E EDITAR NO CSS!!! -->
+  <!-- ENVIAR FEEDBACK/DÚVIDA POR E-MAIL -->
+  <section class="section" id="faq-feedback-form" aria-labelledby="faq-feedback-form-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Deixe seu feedback</p>
+        <h2 id="faq-feedback-form-title">Não achou sua resposta? <span class="accent-red">Manda um e-mail</span> pra gente.</h2>
+        <p class="lead">Ao enviar, seu programa de e-mail vai abrir com a mensagem pronta pra o nosso e-mail.</p>
+      </div>
+      <form action="mailto:mundo.diversaosp@gmail.com" method="post" enctype="text/plain">
+        <p>
+          <label for="faq-feedback-nome">Nome</label><br>
+          <input type="text" id="faq-feedback-nome" name="Nome" required minlength="2" placeholder="Seu nome">
+        </p>
+        <p>
+          <label for="faq-feedback-email">E-mail</label><br>
+          <input type="email" id="faq-feedback-email" name="Email" required placeholder="seu@email.com">
+        </p>
+        <p>
+          <label for="faq-feedback-mensagem">Sua dúvida ou feedback</label><br>
+          <textarea id="faq-feedback-mensagem" name="Mensagem" rows="5" required minlength="10" placeholder="Escreva aqui..."></textarea>
+        </p>
+        <button type="submit" class="btn btn-primary">Enviar →</button>
+      </form>
+    </div>
+  </section>
 
 </main>
 

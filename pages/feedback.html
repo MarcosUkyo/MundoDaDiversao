@@ -40,7 +40,97 @@
 
 <main id="conteudo">
 
-<!-- COLOCAR CONTEUDO AQUI E EDITAR NO CSS!!! -->
+<main id="conteudo">
+
+  <!-- HERO DA PÁGINA -->
+  <section class="section" id="feedback-hero" aria-labelledby="feedback-hero-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">FeedBack</p>
+        <h1 id="feedback-hero-title">O que os pais dizem sobre o <span class="accent-red">Mundo da Diversão</span>.</h1>
+        <p class="lead">Separamos alguns depoimentos de quem já contratou a nossa recreação — e deixamos um espaço pra você contar como foi a sua experiência.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTO EM VÍDEO -->
+  <section class="section dark-section" id="feedback-video" aria-labelledby="feedback-video-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Depoimento em vídeo</p>
+        <h2 id="feedback-video-title">Direto de quem <span class="accent-yellow">viveu</span> a festa.</h2>
+      </div>
+      <div style="max-width:360px;margin:0 auto;border-radius:20px;overflow:hidden;border:4px solid #fff;">
+        <video controls playsinline width="360" height="640" style="display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;">
+          <source src="../assets/img/feedBack-Real.mp4" type="video/mp4">
+          Seu navegador não é compatível com o elemento de vídeo.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section tint-orange" id="feedback-depoimentos" aria-labelledby="feedback-depoimentos-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Depoimentos</p>
+        <h2 id="feedback-depoimentos-title">Histórias de festas <span class="accent-blue">inesquecíveis</span>.</h2>
+      </div>
+      <div class="testimonials-grid">
+        <blockquote>
+          <p>A recreação foi incrível, as crianças não pararam de brincar um minuto sequer. A baladinha de espuma foi o ponto alto da festa!</p>
+          <footer>— Fernanda M., mãe da Luiza</footer>
+        </blockquote>
+        <blockquote>
+          <p>Equipe super atenciosa e organizada. Deu pra aproveitar a festa sabendo que as crianças estavam bem cuidadas.</p>
+          <footer>— Rodrigo A., pai do Enzo</footer>
+        </blockquote>
+        <blockquote>
+          <p>Contratamos pra colônia de férias da escola e foi um sucesso. Já reservamos pro próximo ano!</p>
+          <footer>— Depoimento anônimo</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENVIAR FEEDBACK POR E-MAIL -->
+  <section class="section" id="feedback-form" aria-labelledby="feedback-form-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Deixe seu feedback</p>
+        <h2 id="feedback-form-title">Sua festa já <span class="accent-green">aconteceu</span>? Conta pra gente.</h2>
+        <p class="lead">Ao enviar, seu programa de e-mail vai abrir com a mensagem pronta pra o nosso e-mail.</p>
+      </div>
+
+      <form action="mailto:mundo.diversaosp@gmail.com" method="post" enctype="text/plain">
+        <p>
+          <label for="feedback-nome">Nome</label><br>
+          <input type="text" id="feedback-nome" name="Nome" required minlength="2" placeholder="Seu nome">
+        </p>
+        <p>
+          <label for="feedback-email">E-mail</label><br>
+          <input type="email" id="feedback-email" name="Email" required placeholder="seu@email.com">
+        </p>
+        <p>
+          <label for="feedback-mensagem">Seu feedback</label><br>
+          <textarea id="feedback-mensagem" name="Mensagem" rows="5" required minlength="10" placeholder="Conte como foi a festa..."></textarea>
+        </p>
+        <button type="submit" class="btn btn-primary">Enviar feedback →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="container cta-content">
+      <p class="kicker">Vamos brincar?</p>
+      <h2 id="cta-title">Pronta pra deixar a festa <span class="accent-yellow">inesquecível</span>?</h2>
+      <p>Fale agora com o Mundo da Diversão e peça o orçamento da sua festa pelo WhatsApp.</p>
+      <a href="https://wa.me/5511993741754?text=Oi!%20Quero%20pedir%20um%20or%C3%A7amento%20com%20o%20Mundo%20da%20Divers%C3%A3o!" class="btn btn-primary big" target="_blank" rel="noopener">Pedir orçamento →</a>
+    </div>
+  </section>
+
+</main>
 
 </main>
 
