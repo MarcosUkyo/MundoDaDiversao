@@ -14,9 +14,21 @@ Projeto acadêmico da disciplina de Desenvolvimento Frontend para Web (Entrega A
 
 ## 🌐 Site Publicado
 
+## 🌐 Site Publicado
+
 - **Link do site hospedado:** [`https://marcosukyo.github.io/MundoDaDiversao/`](https://marcosukyo.github.io/MundoDaDiversao/)
-- **Validação W3C (HTML):** [PREENCHER — ex: "Validado sem erros, ver relatório em ___"]
-- **Validação W3C (CSS):** [PREENCHER]
+- **Validação W3C (HTML):** Todas as 10 páginas validadas sem erros ([ver relatório do validador](https://validator.w3.org/nu/)):
+  - [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Findex.html)
+  - [quem-somos.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Fquem-somos.html)
+  - [oficina.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Foficina.html)
+  - [servicos.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Fservicos.html)
+  - [galeria.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Fgaleria.html)
+  - [feedback.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Ffeedback.html)
+  - [faq.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Ffaq.html)
+  - [pacotes.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Fpacotes.html)
+  - [privacidade.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Fprivacidade.html)
+  - [termos.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Ftermos.html)
+- **Validação W3C (CSS):** [`assets/css/style.css` validado sem erros - Precisa de Atualizações para a entrega 2](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fassets%2Fcss%2Fstyle.css)
 
 ## 🏢 Introdução — A Organização
 
