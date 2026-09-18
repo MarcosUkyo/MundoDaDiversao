@@ -14,8 +14,6 @@ Projeto acadêmico da disciplina de Desenvolvimento Frontend para Web (Entrega A
 
 ## 🌐 Site Publicado
 
-## 🌐 Site Publicado
-
 - **Link do site hospedado:** [`https://marcosukyo.github.io/MundoDaDiversao/`](https://marcosukyo.github.io/MundoDaDiversao/)
 - **Validação W3C (HTML):** Todas as 10 páginas validadas sem erros ([ver relatório do validador](https://validator.w3.org/nu/)):
   - [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Findex.html)
