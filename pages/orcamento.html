@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento | Mundo da Diversão</title>
+  <meta name="description" content="Peça seu orçamento de recreação infantil, pintura facial e oficinas criativas para a sua festa em São Paulo e região.">
+  <link rel="icon" type="image/png" href="../assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+
+<header class="header">
+  <div class="container nav">
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/logo.png" alt="Logo Mundo da Diversão" class="logo-img" width="150" height="54">
+    </a>
+
+    <nav class="nav-links" aria-label="Navegação principal">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="oficina.html">Oficina</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="feedback.html">FeedBack</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="pacotes.html">Pacotes</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="orcamento.html" aria-current="page">Orçamento</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://wa.me/5511993741754?text=Oi!%20Quero%20pedir%20um%20or%C3%A7amento%20com%20o%20Mundo%20da%20Divers%C3%A3o!" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Pedir Orçamento</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- CABEÇALHO DA PÁGINA -->
+  <section class="section" id="orcamento-hero" aria-labelledby="orcamento-hero-title">
+    <div class="container section-head">
+      <p class="kicker">Orçamento</p>
+      <h1 id="orcamento-hero-title">Conte como vai ser a sua <span class="accent-red">festa</span>.</h1>
+      <p class="lead">Com a data, o local e a quantidade de crianças, a nossa equipe monta o pacote ideal e responde com o orçamento.</p>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE ORÇAMENTO -->
+  <section class="section tint-orange" id="orcamento-form" aria-labelledby="orcamento-form-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Solicitação de orçamento</p>
+        <h2 id="orcamento-form-title">Preencha os dados do <span class="accent-blue">evento</span>.</h2>
+        <p class="lead">Ao enviar, seu programa de e-mail vai abrir com a solicitação pronta para o nosso e-mail. Os campos marcados com * são obrigatórios.</p>
+      </div>
+
+      <form id="form-orcamento" action="mailto:mundo.diversaosp@gmail.com" method="post" enctype="text/plain">
+
+        <fieldset>
+          <legend>Seus dados</legend>
+          <p>
+            <label for="orc-nome">Nome completo *</label>
+            <input type="text" id="orc-nome" name="Nome" data-lembrar="nome" required minlength="2" maxlength="60" pattern="[A-Za-zÀ-ÿ ]{2,60}" autocomplete="name" placeholder="Seu nome" title="Use apenas letras e espaços (mínimo de 2 letras).">
+          </p>
+          <p>
+            <label for="orc-email">E-mail *</label>
+            <input type="email" id="orc-email" name="Email" data-lembrar="email" required autocomplete="email" placeholder="seu@email.com">
+          </p>
+          <p>
+            <label for="orc-telefone">Telefone com DDD *</label>
+            <input type="tel" id="orc-telefone" name="Telefone" data-lembrar="telefone" required maxlength="15" pattern="\(\d{2}\) \d{4,5}-\d{4}" inputmode="numeric" autocomplete="tel" placeholder="(11) 99999-9999" title="Formato: (11) 99999-9999">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sobre a festa</legend>
+          <p>
+            <label for="orc-tipo">Tipo de evento *</label>
+            <select id="orc-tipo" name="Tipo_de_evento" required>
+              <option value="">Selecione o tipo de evento</option>
+              <option value="Aniversario infantil">Aniversário infantil</option>
+              <option value="Casamento">Casamento (espaço kids)</option>
+              <option value="Colonia de ferias">Colônia de férias</option>
+              <option value="Condominio ou empresa">Evento de condomínio ou empresa</option>
+            </select>
+          </p>
+          <p>
+            <label for="orc-data">Data do evento *</label>
+            <input type="date" id="orc-data" name="Data_do_evento" required>
+          </p>
+          <p>
+            <label for="orc-local">Endereço ou bairro do evento *</label>
+            <input type="text" id="orc-local" name="Local" required minlength="5" maxlength="120" autocomplete="address-line1" placeholder="Rua, bairro e cidade">
+          </p>
+          <p>
+            <label for="orc-quantidade">Quantidade de crianças *</label>
+            <input type="number" id="orc-quantidade" name="Quantidade_de_criancas" required min="1" max="200" step="1" inputmode="numeric" placeholder="Ex.: 20">
+          </p>
+          <p>
+            <label for="orc-idade">Faixa etária *</label>
+            <select id="orc-idade" name="Faixa_etaria" required>
+              <option value="">Selecione a faixa etária</option>
+              <option value="3 a 5 anos">3 a 5 anos</option>
+              <option value="6 a 8 anos">6 a 8 anos</option>
+              <option value="9 a 12 anos">9 a 12 anos</option>
+              <option value="Turma mista">Turma mista</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pacote *</legend>
+          <p><label for="orc-pacote-compacto"><input type="radio" id="orc-pacote-compacto" name="Pacote" value="Compacto" required> Pacote Compacto (recreação e pintura facial)</label></p>
+          <p><label for="orc-pacote-completo"><input type="radio" id="orc-pacote-completo" name="Pacote" value="Festa Completa"> Pacote Festa Completa</label></p>
+          <p><label for="orc-pacote-medida"><input type="radio" id="orc-pacote-medida" name="Pacote" value="Sob Medida"> Pacote Sob Medida</label></p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Atividades de interesse</legend>
+          <p><label for="orc-ativ-recreacao"><input type="checkbox" id="orc-ativ-recreacao" name="Atividades" value="Recreacao infantil"> Recreação infantil</label></p>
+          <p><label for="orc-ativ-pintura"><input type="checkbox" id="orc-ativ-pintura" name="Atividades" value="Pintura facial"> Pintura facial</label></p>
+          <p><label for="orc-ativ-oficinas"><input type="checkbox" id="orc-ativ-oficinas" name="Atividades" value="Oficinas criativas"> Oficinas criativas</label></p>
+          <p><label for="orc-ativ-espuma"><input type="checkbox" id="orc-ativ-espuma" name="Atividades" value="Baladinha com chuva de espuma"> Baladinha com chuva de espuma</label></p>
+        </fieldset>
+
+        <p>
+          <label for="orc-obs">Observações (opcional)</label>
+          <textarea id="orc-obs" name="Observacoes" rows="4" maxlength="500" placeholder="Tema da festa, horário, espaço disponível..."></textarea>
+          <small id="orc-obs-contador">0/500 caracteres</small>
+        </p>
+        <p>
+          <label for="orc-lembrar"><input type="checkbox" id="orc-lembrar" data-lembrar-opcao> Lembrar meus dados neste navegador</label>
+        </p>
+        <p>
+          <label for="orc-aceite"><input type="checkbox" id="orc-aceite" required> Li e concordo com a <a href="privacidade.html">Política de Privacidade</a>. *</label>
+        </p>
+        <button type="submit" class="btn btn-primary">Enviar solicitação →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- INFORMAÇÕES SOBRE VALORES -->
+  <aside class="section" id="orcamento-valores" aria-labelledby="orcamento-valores-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Antes de enviar</p>
+        <h2 id="orcamento-valores-title">Sobre <span class="accent-blue">valores</span> e pagamento.</h2>
+      </div>
+      <blockquote>
+        <p>Os valores não ficam fixos no site: são combinados diretamente com a nossa equipe, de acordo com o pacote e o tamanho da turma. O pagamento pode ser à vista, com 5% de desconto, ou parcelado em até duas vezes sem juros.</p>
+        <footer>— Equipe Mundo da Diversão</footer>
+      </blockquote>
+    </div>
+  </aside>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section tint-purple" id="como-funciona" aria-labelledby="processo-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Como funciona</p>
+        <h2 id="processo-title">Marcar sua festa é <span class="accent-blue">simples</span>.</h2>
+      </div>
+      <ol class="process">
+        <li>
+          <span class="step-num" aria-hidden="true">1.</span>
+          <h3>Fale com a gente</h3>
+          <p>Chame no WhatsApp ou Instagram e conte a data, o endereço e a quantidade de crianças.</p>
+        </li>
+        <li>
+          <span class="step-num" aria-hidden="true">2.</span>
+          <h3>Fechamos o orçamento</h3>
+          <p>Montamos o pacote ideal pra sua festa e combinamos a forma de pagamento.</p>
+        </li>
+        <li>
+          <span class="step-num" aria-hidden="true">3.</span>
+          <h3>O dia da festa chega</h3>
+          <p>Nossa equipe chega com tudo pronto para cuidar da diversão do início ao fim.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="../index.html" class="logo">
+        <img src="../assets/img/logo.png" alt="Mundo da Diversão" class="logo-img" width="150" height="50">
+      </a>
+      <p>Diversão e aprendizado em cada brincadeira.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navegação do rodapé">
+      <h3>Site</h3>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="oficina.html">Oficina</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="feedback.html">FeedBack</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="pacotes.html">Pacotes</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="orcamento.html">Orçamento</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-nav" aria-label="Políticas">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos.html">Termos de Uso</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-contact">
+      <h3>Contato</h3>
+      <p><a href="https://wa.me/5511993741754" target="_blank" rel="noopener">WhatsApp</a></p>
+      <p><a href="https://www.instagram.com/mundo.da.diversao_oficial/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <small>&copy; 2026 Mundo da Diversão. Todos os direitos reservados.</small>
+  </div>
+</footer>
+
+<script src="../assets/js/forms.js" defer></script>
+</body>
+</html>

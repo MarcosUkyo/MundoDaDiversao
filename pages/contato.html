@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Mundo da Diversão</title>
+  <meta name="description" content="Fale com o Mundo da Diversão por WhatsApp, e-mail ou Instagram, ou envie sua mensagem pelo formulário de contato.">
+  <link rel="icon" type="image/png" href="../assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+
+<header class="header">
+  <div class="container nav">
+    <a href="../index.html" class="logo">
+      <img src="../assets/img/logo.png" alt="Logo Mundo da Diversão" class="logo-img" width="150" height="54">
+    </a>
+
+    <nav class="nav-links" aria-label="Navegação principal">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="oficina.html">Oficina</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="feedback.html">FeedBack</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="pacotes.html">Pacotes</a></li>
+        <li><a href="contato.html" aria-current="page">Contato</a></li>
+        <li><a href="orcamento.html">Orçamento</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://wa.me/5511993741754?text=Oi!%20Quero%20pedir%20um%20or%C3%A7amento%20com%20o%20Mundo%20da%20Divers%C3%A3o!" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Pedir Orçamento</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- CABEÇALHO DA PÁGINA -->
+  <section class="section" id="contato-hero" aria-labelledby="contato-hero-title">
+    <div class="container section-head">
+      <p class="kicker">Contato</p>
+      <h1 id="contato-hero-title">Vamos conversar sobre a sua <span class="accent-red">festa</span>?</h1>
+      <p class="lead">Escolha o canal que for mais fácil pra você. Respondemos com carinho e ajudamos a montar a recreação ideal pra turminha.</p>
+    </div>
+  </section>
+
+  <!-- CANAIS DE ATENDIMENTO -->
+  <section class="section dark-section" id="canais" aria-labelledby="canais-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Canais de atendimento</p>
+        <h2 id="canais-title">Onde a gente <span class="accent-yellow">atende você</span>.</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <img class="service-icon" src="../assets/img/whatsapp.svg" alt="Ícone do WhatsApp" width="40" height="40">
+          <h3>WhatsApp</h3>
+          <p>O jeito mais rápido de falar com a gente.</p>
+          <p class="section-more"><a href="https://wa.me/5511993741754" target="_blank" rel="noopener">(11) 99374-1754</a></p>
+        </article>
+        <article class="service-card">
+          <img class="service-icon" src="../assets/img/email.svg" alt="Ícone de e-mail" width="40" height="40">
+          <h3>E-mail</h3>
+          <p>Ideal para dúvidas com mais detalhes.</p>
+          <p class="section-more"><a href="mailto:mundo.diversaosp@gmail.com">mundo.diversaosp@gmail.com</a></p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true">📸</span>
+          <h3>Instagram</h3>
+          <p>Veja as festas e fale com a gente por mensagem.</p>
+          <p class="section-more"><a href="https://www.instagram.com/mundo.da.diversao_oficial/" target="_blank" rel="noopener">@mundo.da.diversao_oficial</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE CONTATO -->
+  <section class="section tint-orange" id="contato-form" aria-labelledby="contato-form-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Envie uma mensagem</p>
+        <h2 id="contato-form-title">Prefere <span class="accent-blue">escrever</span> pra gente?</h2>
+        <p class="lead">Ao enviar, seu programa de e-mail vai abrir com a mensagem pronta para o nosso e-mail. Todos os campos são obrigatórios.</p>
+      </div>
+
+      <form id="form-contato" action="mailto:mundo.diversaosp@gmail.com" method="post" enctype="text/plain">
+        <p>
+          <label for="contato-nome">Nome completo</label>
+          <input type="text" id="contato-nome" name="Nome" data-lembrar="nome" required minlength="2" maxlength="60" pattern="[A-Za-zÀ-ÿ ]{2,60}" autocomplete="name" placeholder="Seu nome" title="Use apenas letras e espaços (mínimo de 2 letras).">
+        </p>
+        <p>
+          <label for="contato-email">E-mail</label>
+          <input type="email" id="contato-email" name="Email" data-lembrar="email" required autocomplete="email" placeholder="seu@email.com">
+        </p>
+        <p>
+          <label for="contato-telefone">Telefone com DDD</label>
+          <input type="tel" id="contato-telefone" name="Telefone" data-lembrar="telefone" required maxlength="15" pattern="\(\d{2}\) \d{4,5}-\d{4}" inputmode="numeric" autocomplete="tel" placeholder="(11) 99999-9999" title="Formato: (11) 99999-9999">
+        </p>
+        <p>
+          <label for="contato-assunto">Assunto</label>
+          <select id="contato-assunto" name="Assunto" required>
+            <option value="">Selecione um assunto</option>
+            <option value="Duvida">Dúvida sobre os serviços</option>
+            <option value="Disponibilidade">Disponibilidade de data</option>
+            <option value="Elogio">Elogio ou sugestão</option>
+            <option value="Outro">Outro assunto</option>
+          </select>
+        </p>
+        <p>
+          <label for="contato-mensagem">Mensagem</label>
+          <textarea id="contato-mensagem" name="Mensagem" rows="5" required minlength="10" maxlength="500" placeholder="Escreva aqui..."></textarea>
+          <small id="contato-mensagem-contador">0/500 caracteres</small>
+        </p>
+        <p>
+          <label for="contato-lembrar"><input type="checkbox" id="contato-lembrar" data-lembrar-opcao> Lembrar meus dados neste navegador</label>
+        </p>
+        <p>
+          <label for="contato-aceite"><input type="checkbox" id="contato-aceite" required> Li e concordo com a <a href="privacidade.html">Política de Privacidade</a>.</label>
+        </p>
+        <button type="submit" class="btn btn-primary">Enviar mensagem →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="container cta-content">
+      <p class="kicker">Vamos brincar?</p>
+      <h2 id="cta-title">Já sabe a data da festa?</h2>
+      <p>Preencha o formulário de orçamento e a gente monta o pacote ideal com você.</p>
+      <a href="orcamento.html" class="btn btn-primary big">Pedir orçamento →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="../index.html" class="logo">
+        <img src="../assets/img/logo.png" alt="Mundo da Diversão" class="logo-img" width="150" height="50">
+      </a>
+      <p>Diversão e aprendizado em cada brincadeira.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navegação do rodapé">
+      <h3>Site</h3>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="quem-somos.html">Quem Somos</a></li>
+        <li><a href="oficina.html">Oficina</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="feedback.html">FeedBack</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="pacotes.html">Pacotes</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="orcamento.html">Orçamento</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-nav" aria-label="Políticas">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="privacidade.html">Política de Privacidade</a></li>
+        <li><a href="termos.html">Termos de Uso</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-contact">
+      <h3>Contato</h3>
+      <p><a href="https://wa.me/5511993741754" target="_blank" rel="noopener">WhatsApp</a></p>
+      <p><a href="https://www.instagram.com/mundo.da.diversao_oficial/" target="_blank" rel="noopener">Instagram</a></p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <small>&copy; 2026 Mundo da Diversão. Todos os direitos reservados.</small>
+  </div>
+</footer>
+
+<script src="../assets/js/forms.js" defer></script>
+</body>
+</html>
