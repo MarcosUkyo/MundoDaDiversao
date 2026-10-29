@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato | Mundo da Diversão</title>
-  <meta name="description" content="Fale com o Mundo da Diversão por WhatsApp, e-mail ou Instagram, ou envie sua mensagem pelo formulário de contato.">
+  <meta name="description" content="Fale com o Mundo da Diversão: envie sua mensagem, chame no WhatsApp ou no Instagram e tire suas dúvidas sobre recreação infantil.">
   <link rel="icon" type="image/png" href="../assets/img/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,12 +31,12 @@
         <li><a href="feedback.html">FeedBack</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="pacotes.html">Pacotes</a></li>
-        <li><a href="contato.html" aria-current="page">Contato</a></li>
         <li><a href="orcamento.html">Orçamento</a></li>
+        <li><a href="contato.html" aria-current="page">Contato</a></li>
       </ul>
     </nav>
 
-    <a href="https://wa.me/5511993741754?text=Oi!%20Quero%20pedir%20um%20or%C3%A7amento%20com%20o%20Mundo%20da%20Divers%C3%A3o!" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Pedir Orçamento</a>
+    <a href="https://wa.me/5511993741754?text=Oi!%20Quero%20pedir%20um%20or%C3%A7amento%20com%20o%20Mundo%20da%20Divers%C3%A3o!" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Pedir Orçamento via WhatsApp</a>
   </div>
 </header>
 
@@ -46,96 +46,69 @@
   <section class="section" id="contato-hero" aria-labelledby="contato-hero-title">
     <div class="container section-head">
       <p class="kicker">Contato</p>
-      <h1 id="contato-hero-title">Vamos conversar sobre a sua <span class="accent-red">festa</span>?</h1>
-      <p class="lead">Escolha o canal que for mais fácil pra você. Respondemos com carinho e ajudamos a montar a recreação ideal pra turminha.</p>
+      <h1 id="contato-hero-title">Vamos conversar sobre a <span class="accent-red">sua festa</span>?</h1>
+      <p class="lead">Mande sua dúvida, sugestão ou pedido pelo formulário, pelo WhatsApp ou pelo Instagram. A gente responde o quanto antes.</p>
     </div>
   </section>
 
-  <!-- CANAIS DE ATENDIMENTO -->
-  <section class="section dark-section" id="canais" aria-labelledby="canais-title">
-    <div class="container">
-      <div class="section-head">
-        <p class="kicker">Canais de atendimento</p>
-        <h2 id="canais-title">Onde a gente <span class="accent-yellow">atende você</span>.</h2>
-      </div>
-      <div class="services-grid">
-        <article class="service-card">
-          <img class="service-icon" src="../assets/img/whatsapp.svg" alt="Ícone do WhatsApp" width="40" height="40">
-          <h3>WhatsApp</h3>
-          <p>O jeito mais rápido de falar com a gente.</p>
-          <p class="section-more"><a href="https://wa.me/5511993741754" target="_blank" rel="noopener">(11) 99374-1754</a></p>
-        </article>
-        <article class="service-card">
-          <img class="service-icon" src="../assets/img/email.svg" alt="Ícone de e-mail" width="40" height="40">
-          <h3>E-mail</h3>
-          <p>Ideal para dúvidas com mais detalhes.</p>
-          <p class="section-more"><a href="mailto:mundo.diversaosp@gmail.com">mundo.diversaosp@gmail.com</a></p>
-        </article>
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">📸</span>
-          <h3>Instagram</h3>
-          <p>Veja as festas e fale com a gente por mensagem.</p>
-          <p class="section-more"><a href="https://www.instagram.com/mundo.da.diversao_oficial/" target="_blank" rel="noopener">@mundo.da.diversao_oficial</a></p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- FORMULÁRIO DE CONTATO -->
+  <!-- FORMULÁRIO + INFORMAÇÕES -->
   <section class="section tint-orange" id="contato-form" aria-labelledby="contato-form-title">
-    <div class="container">
-      <div class="section-head">
-        <p class="kicker">Envie uma mensagem</p>
-        <h2 id="contato-form-title">Prefere <span class="accent-blue">escrever</span> pra gente?</h2>
-        <p class="lead">Ao enviar, seu programa de e-mail vai abrir com a mensagem pronta para o nosso e-mail. Todos os campos são obrigatórios.</p>
+    <div class="container contact-layout">
+
+      <div>
+        <h2 id="contato-form-title">Envie uma <span class="accent-blue">mensagem</span>.</h2>
+        <p class="lead">Ao enviar, seu programa de e-mail vai abrir com a mensagem pronta para o nosso e-mail. Campos com * são obrigatórios.</p>
+
+        <form action="mailto:mundo.diversaosp@gmail.com" method="post" enctype="text/plain">
+          <p>
+            <label for="contato-nome">Nome completo *</label>
+            <input type="text" id="contato-nome" name="Nome" required minlength="3" maxlength="80" pattern="[A-Za-zÀ-ÿ ]{3,80}" title="Use apenas letras e espaços (mínimo de 3 letras)." autocomplete="name" placeholder="Seu nome">
+          </p>
+          <div class="form-row">
+            <p>
+              <label for="contato-email">E-mail *</label>
+              <input type="email" id="contato-email" name="Email" required autocomplete="email" placeholder="seu@email.com">
+            </p>
+            <p>
+              <label for="contato-telefone">Telefone / WhatsApp *</label>
+              <input type="tel" id="contato-telefone" data-mascara="telefone" name="Telefone" required pattern="\([0-9]{2}\) 9?[0-9]{4}-[0-9]{4}" maxlength="15" title="Use o formato (11) 99999-9999." autocomplete="tel" placeholder="(11) 99999-9999">
+            </p>
+          </div>
+          <p>
+            <label for="contato-assunto">Assunto *</label>
+            <select id="contato-assunto" name="Assunto" required>
+              <option value="">Selecione...</option>
+              <option value="Duvida">Tenho uma dúvida</option>
+              <option value="Disponibilidade">Disponibilidade de data</option>
+              <option value="Sugestao">Sugestão ou elogio</option>
+              <option value="Parceria">Parceria ou trabalhe com a gente</option>
+              <option value="Outro">Outro assunto</option>
+            </select>
+          </p>
+          <p>
+            <label for="contato-mensagem">Mensagem *</label>
+            <textarea id="contato-mensagem" name="Mensagem" rows="6" required minlength="10" maxlength="600" placeholder="Escreva aqui..."></textarea>
+          </p>
+          <p class="check-line">
+            <input type="checkbox" id="contato-aceite" name="Aceite" value="sim" required>
+            <label for="contato-aceite">Concordo em enviar meus dados para retorno do contato, conforme a <a href="privacidade.html">Política de Privacidade</a>. *</label>
+          </p>
+          <button type="submit" class="btn btn-primary">Enviar mensagem →</button>
+        </form>
       </div>
 
-      <form id="form-contato" action="mailto:mundo.diversaosp@gmail.com" method="post" enctype="text/plain">
-        <p>
-          <label for="contato-nome">Nome completo</label>
-          <input type="text" id="contato-nome" name="Nome" data-lembrar="nome" required minlength="2" maxlength="60" pattern="[A-Za-zÀ-ÿ ]{2,60}" autocomplete="name" placeholder="Seu nome" title="Use apenas letras e espaços (mínimo de 2 letras).">
-        </p>
-        <p>
-          <label for="contato-email">E-mail</label>
-          <input type="email" id="contato-email" name="Email" data-lembrar="email" required autocomplete="email" placeholder="seu@email.com">
-        </p>
-        <p>
-          <label for="contato-telefone">Telefone com DDD</label>
-          <input type="tel" id="contato-telefone" name="Telefone" data-lembrar="telefone" required maxlength="15" pattern="\(\d{2}\) \d{4,5}-\d{4}" inputmode="numeric" autocomplete="tel" placeholder="(11) 99999-9999" title="Formato: (11) 99999-9999">
-        </p>
-        <p>
-          <label for="contato-assunto">Assunto</label>
-          <select id="contato-assunto" name="Assunto" required>
-            <option value="">Selecione um assunto</option>
-            <option value="Duvida">Dúvida sobre os serviços</option>
-            <option value="Disponibilidade">Disponibilidade de data</option>
-            <option value="Elogio">Elogio ou sugestão</option>
-            <option value="Outro">Outro assunto</option>
-          </select>
-        </p>
-        <p>
-          <label for="contato-mensagem">Mensagem</label>
-          <textarea id="contato-mensagem" name="Mensagem" rows="5" required minlength="10" maxlength="500" placeholder="Escreva aqui..."></textarea>
-          <small id="contato-mensagem-contador">0/500 caracteres</small>
-        </p>
-        <p>
-          <label for="contato-lembrar"><input type="checkbox" id="contato-lembrar" data-lembrar-opcao> Lembrar meus dados neste navegador</label>
-        </p>
-        <p>
-          <label for="contato-aceite"><input type="checkbox" id="contato-aceite" required> Li e concordo com a <a href="privacidade.html">Política de Privacidade</a>.</label>
-        </p>
-        <button type="submit" class="btn btn-primary">Enviar mensagem →</button>
-      </form>
-    </div>
-  </section>
+      <aside class="contact-aside" aria-labelledby="contato-aside-title">
+        <h2 id="contato-aside-title">Outros canais</h2>
+        <address>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511993741754?text=Oi!%20Vi%20o%20site%20do%20Mundo%20da%20Divers%C3%A3o%20e%20quero%20saber%20mais!" target="_blank" rel="noopener">(11) 99374-1754</a></p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/mundo.da.diversao_oficial/" target="_blank" rel="noopener">@mundo.da.diversao_oficial</a></p>
+          <p><strong>E-mail:</strong> <a href="mailto:mundo.diversaosp@gmail.com">mundo.diversaosp@gmail.com</a></p>
+          <p><strong>Atendimento:</strong> São Paulo e região</p>
+        </address>
+        <p>Quer já saber quanto custa? Peça um orçamento com data, local e número de crianças.</p>
+        <p class="section-more"><a href="orcamento.html">Ir para o pedido de orçamento →</a></p>
+      </aside>
 
-  <!-- CTA -->
-  <section class="cta" aria-labelledby="cta-title">
-    <div class="container cta-content">
-      <p class="kicker">Vamos brincar?</p>
-      <h2 id="cta-title">Já sabe a data da festa?</h2>
-      <p>Preencha o formulário de orçamento e a gente monta o pacote ideal com você.</p>
-      <a href="orcamento.html" class="btn btn-primary big">Pedir orçamento →</a>
     </div>
   </section>
 
@@ -161,8 +134,8 @@
         <li><a href="feedback.html">FeedBack</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="pacotes.html">Pacotes</a></li>
-        <li><a href="contato.html">Contato</a></li>
         <li><a href="orcamento.html">Orçamento</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
 
@@ -186,6 +159,12 @@
   </div>
 </footer>
 
-<script src="../assets/js/forms.js" defer></script>
+<audio id="musica-fundo" loop preload="none">
+  <source src="../assets/audio/musica-fundo.mp3" type="audio/mpeg">
+  Seu navegador não é compatível com o elemento de áudio.
+</audio>
+
+<script src="../assets/js/musica.js" defer></script>
+<script src="../assets/js/mascaras.js" defer></script>
 </body>
 </html>

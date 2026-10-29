@@ -1,5 +1,5 @@
 /* =========================================================
-   MUNDO DA DIVERSÃO — CSS PRINCIPAL (usado pelas páginas)
+   MUNDO DA DIVERSÃO — CSS PRINCIPAL (usado pelas 10 páginas)
    Sumário:
    1. Reset & Base
    2. Variáveis
@@ -8,7 +8,7 @@
    5. Botões
    6. Header & Navegação
    7. Hero
-   8. Componentes de conteúdo (cards, lista, citação, faq, contato, formulários)
+   8. Componentes de conteúdo (cards, lista, citação, faq, contato, formulários, música)
    9. Footer
    10. Responsivo
    ========================================================= */
@@ -156,7 +156,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   padding: 14px 28px;
 }
 .logo-img { height: 100px; }
-.nav-links ul { display: flex; flex-wrap: wrap; gap: 20px; }
+.header .container { max-width: 1360px; }
+.nav-links ul { display: flex; flex-wrap: wrap; gap: 16px; }
 .nav-links a { font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: .92rem; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--red); }
 .nav-cta { padding: 9px 20px; font-size: .85rem; box-shadow: 0 5px 0 0 var(--red-dark); }
@@ -287,7 +288,7 @@ blockquote footer {
 .faq-item[open] summary { color: var(--red); }
 .faq-item p { padding: 0 22px 18px; }
 
-/* formulários (feedback, dúvidas, contato e orçamento) */
+/* formulários (feedback / dúvidas — usado em index, feedback.html e faq.html) */
 form {
   max-width: 640px;
   margin-top: 8px;
@@ -312,6 +313,7 @@ form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
 form input[type="date"],
+form input[type="time"],
 form input[type="number"],
 form select,
 form textarea {
@@ -342,6 +344,7 @@ form textarea:focus {
   box-shadow: 0 0 0 3px rgba(46, 111, 242, .15);
 }
 form input:invalid:not(:placeholder-shown):not(:focus),
+form select:invalid:not(:placeholder-shown):not(:focus),
 form textarea:invalid:not(:placeholder-shown):not(:focus) {
   border-color: var(--red);
 }
@@ -349,43 +352,84 @@ form button[type="submit"] {
   margin-top: 4px;
   font-size: 1.05rem;
 }
-form small {
-  display: block;
-  margin-top: 6px;
-  font-size: .85rem;
-  color: var(--muted);
-}
 
-/* grupos de campos (fieldset) e opções (radio e checkbox) */
+/* formulários longos (contato e orçamento) */
+form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
 form fieldset {
   border: 2px solid var(--line);
   border-radius: var(--radius);
-  padding: 22px 22px 0;
+  padding: 20px 22px 4px;
   margin-bottom: 22px;
 }
 form legend {
-  padding: 0 8px;
   font-family: 'Baloo 2', sans-serif;
   font-weight: 800;
+  font-size: 1.1rem;
   color: var(--ink);
+  padding: 0 8px;
 }
-form label:has(input[type="checkbox"]),
-form label:has(input[type="radio"]) {
+form .check-line {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
+}
+form .check-line input {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  accent-color: var(--red);
+}
+form .check-line label {
+  margin-bottom: 0;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-size: 1rem;
 }
-form input[type="checkbox"],
-form input[type="radio"] {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  accent-color: var(--red);
+form .check-line a { color: var(--blue); text-decoration: underline; }
+
+/* contato: formulário + coluna de informações */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 56px;
+  align-items: start;
 }
-form label a { text-decoration: underline; color: var(--blue); }
+.contact-aside {
+  background: var(--white);
+  border-radius: var(--radius);
+  border-top: 4px solid var(--red);
+  padding: 28px 26px;
+}
+.contact-aside address a:hover { color: var(--red); }
+
+/* botão de música de fundo (navbar) */
+.music-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.music-toggle:hover { border-color: var(--blue); color: var(--blue); }
+.music-toggle[aria-pressed="true"] {
+  background: var(--green);
+  border-color: var(--green);
+  color: var(--white);
+}
+.music-toggle .icon-on { display: none; }
+.music-toggle[aria-pressed="true"] .icon-on { display: block; }
+.music-toggle[aria-pressed="true"] .icon-off { display: none; }
+
 
 /* cta */
 .cta { background: var(--dark); padding: 90px 0; text-align: center; }
@@ -417,7 +461,7 @@ address strong { font-family: 'Baloo 2', sans-serif; color: var(--red); margin-r
 @media (max-width: 768px) {
   .hero-content { grid-template-columns: 1fr; }
   .hero-figure { order: -1; max-width: 380px; margin: 0 auto; }
-  .two-col, .two-col.reverse { grid-template-columns: 1fr; }
+  .two-col, .two-col.reverse, .contact-layout { grid-template-columns: 1fr; }
   .two-col.reverse .img-frame { order: 0; }
   .process { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr 1fr; }
@@ -430,6 +474,7 @@ address strong { font-family: 'Baloo 2', sans-serif; color: var(--red); margin-r
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { justify-content: center; }
   .services-grid { grid-template-columns: 1fr; }
+  form .form-row { grid-template-columns: 1fr; }
   .img-frame img { height: 240px; }
   .footer-grid { grid-template-columns: 1fr; }
 }
