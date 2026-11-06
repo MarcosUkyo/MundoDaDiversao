@@ -60,6 +60,7 @@ Durante a conversa, Victoria contou a história da empresa (criada em 2025 a par
 │   ├── css/
 │   │   └── style.css       # CSS único do projeto
 │   ├── js/
+│   │   ├── acessibilidade.js # comportamentos gerais (scroll suave, voltar ao topo)
 │   │   ├── musica.js       # botão de música de fundo (<audio>)
 │   │   ├── mascaras.js     # máscaras de telefone e CEP
 │   │   └── forms.js        # contador de caracteres, rascunho e "lembrar meus dados"
