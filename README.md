@@ -1,6 +1,6 @@
 # 🎈 Mundo da Diversão — Site Institucional
 
-Projeto acadêmico da disciplina de Desenvolvimento Frontend para Web (Entrega A2).
+Projeto acadêmico da disciplina de Desenvolvimento Frontend para Web (Entrega A2) — Prof. Cid Andrade.
 
 ## 👥 Integrantes do Grupo
 
@@ -15,7 +15,7 @@ Projeto acadêmico da disciplina de Desenvolvimento Frontend para Web (Entrega A
 ## 🌐 Site Publicado
 
 - **Link do site hospedado:** [`https://marcosukyo.github.io/MundoDaDiversao/`](https://marcosukyo.github.io/MundoDaDiversao/)
-- **Validação W3C (HTML):** Todas as 10 páginas validadas sem erros ([ver relatório do validador](https://validator.w3.org/nu/)):
+- **Validação W3C (HTML):** todas as páginas validadas ([Nu Html Checker](https://validator.w3.org/nu/)):
   - [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Findex.html)
   - [quem-somos.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Fquem-somos.html)
   - [oficina.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Foficina.html)
@@ -26,25 +26,27 @@ Projeto acadêmico da disciplina de Desenvolvimento Frontend para Web (Entrega A
   - [pacotes.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Fpacotes.html)
   - [privacidade.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Fprivacidade.html)
   - [termos.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Ftermos.html)
-- **Validação W3C (CSS):** [`assets/css/style.css` validado sem erros - Precisa de Atualizações para a entrega 2](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fassets%2Fcss%2Fstyle.css)
+- **Validação W3C (CSS):** [`assets/css/style.css`](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fassets%2Fcss%2Fstyle.css)
 
 ## 🏢 Introdução — A Organização
 
 O **Mundo da Diversão** é uma empresa de recreação infantil para festas, fundada em 2025 em São Paulo por Victoria, biomédica, e sua mãe, pedagoga. A empresa nasceu da vontade de unir experiência com eventos e com educação infantil em um serviço de recreação de verdade: profissionais preparados, que enxergam cada criança de forma individual.
 
-O Mundo da Diversão leva até a festa recreação infantil, pintura facial e oficinas criativas (como slime, miçanga e peteca), além da "baladinha com chuva de espuma", um diferencial do pacote. A equipe é formada por recreadores freelancers selecionados com cuidado — nenhum profissional novo atua sozinho em um evento antes de ser acompanhado por alguém mais experiente. A empresa atende aniversários infantis, casamentos (espaço kids), colônias de férias e eventos corporativos/condominiais em São Paulo e região.
+O Mundo da Diversão leva até a festa recreação infantil, pintura facial e oficinas criativas (como slime, miçanga e peteca), além da "baladinha com chuva de espuma", um diferencial incluído na recreação. A equipe é formada por recreadores freelancers selecionados com cuidado — nenhum profissional novo atua sozinho em um evento antes de ser acompanhado por alguém mais experiente. A empresa atende aniversários infantis, casamentos (espaço kids), colônias de férias e eventos corporativos/condominiais em São Paulo e região, sempre no local do cliente.
+
+**Objetivo do site:** ser o local onde os pais e responsáveis conhecem o trabalho da empresa ao navegar na internet, entendendo as atividades oferecidas, os diferenciais, a missão e os valores. Os valores **não** são divulgados no site: todo orçamento é feito pelo WhatsApp, a pedido da cliente.
 
 ## 🎤 Contato com a Organização (comprovação da entrevista)
 
-A entrevista foi realizada **presencialmente**, com Victoria, fundadora do Mundo da Diversão, no dia **25/08/2026, às 19h30**.
+A entrevista foi realizada **presencialmente**, com Victoria, fundadora do Mundo da Diversão, no dia **25/08/2026, às 19h30**, seguindo o roteiro de levantamento de requisitos fornecido pelos professores (Modelagem de Dados e Desenvolvimento Frontend para Web).
 
-Durante a conversa, a equipe apresentou a proposta do projeto acadêmico e Victoria contou a história da empresa — criada em 2025 a partir da união entre sua formação em biomedicina e a experiência da mãe como pedagoga — além de detalhar os serviços oferecidos (recreação infantil, pintura facial, oficinas criativas e a baladinha com chuva de espuma), o processo de seleção e acompanhamento dos recreadores freelancers, e os valores que guiam o trabalho, como a preocupação em oferecer uma recreação inclusiva, sem nenhum tipo de segregação entre as crianças.
+Durante a conversa, Victoria contou a história da empresa (criada em 2025 a partir da união entre sua formação em biomedicina e a experiência da mãe como pedagoga), os serviços oferecidos (recreação infantil, pintura facial, oficinas e a baladinha com chuva de espuma), o processo de seleção e acompanhamento dos recreadores freelancers e os valores que guiam o trabalho, como a recreação inclusiva, sem nenhum tipo de segregação entre as crianças. Também definiu requisitos do site: cores e slogan iguais aos do Instagram e do site antigo, site de referência de design, nenhum valor exibido e orçamento sempre via WhatsApp.
 
-**Comprovação do contato:**
+**Forma de contato:** entrevista presencial.
 
-![Reunião presencial da equipe com a fundadora do Mundo da Diversão](assets/img/entrevista.jfif)
+**Comprovação:** o roteiro de entrevista preenchido com as respostas da Victoria durante a reunião está disponível para leitura no link abaixo:
 
-*Reunião presencial com a fundadora do Mundo da Diversão — 25/08/2026, 19h30.*
+- 📄 [Entrevista_Levantamento_Requisitos_Mundo-da-Diversão](https://acadcruzeirodosul-my.sharepoint.com/:w:/g/personal/marcos_cunha008_cs_cruzeirodosul_edu_br/IQB1h5tKD1zyRZ6T_7FYgdqyAb0CU4KNhOA4OEOBibnhdsM?e=ZcTexj)
 
 ## 🗂️ Estrutura do Projeto
 
@@ -55,7 +57,8 @@ Durante a conversa, a equipe apresentou a proposta do projeto acadêmico e Victo
 ├── assets/
 │   ├── css/
 │   │   └── style.css       # CSS único do projeto
-│   └── img/                # imagens (fotos, logo, ícones, comprovação da entrevista)
+│   ├── img/                # imagens, logo, ícones
+│   └── videos/             # vídeos (oficina e depoimento)
 └── pages/
     ├── quem-somos.html
     ├── oficina.html
@@ -68,20 +71,22 @@ Durante a conversa, a equipe apresentou a proposta do projeto acadêmico e Victo
     └── termos.html
 ```
 
-## 🗺️ Mapa do Site (10 páginas)
+## 🗺️ Mapa do Site
 
-1. [`index.html`](https://marcosukyo.github.io/MundoDaDiversao/index.html) — Página inicial (Html + Css 100%)
-2. [`pages/quem-somos.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/quem-somos.html) — História, missão, valores e equipe (Html + Css reutilizado) 
-3. [`pages/oficina.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/oficina.html) — Oficinas criativas (Html + Css reutilizado)
-4. [`pages/servicos.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/servicos.html) — Tipos de festa atendidos (Html + Css reutilizado)
-5. [`pages/galeria.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/galeria.html) — Galeria de fotos (Html + Css reutilizado)
-6. [`pages/feedback.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/feedback.html) — Depoimentos (Html + Css reutilizado)
-7. [`pages/faq.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/faq.html) — Perguntas frequentes (Html + Css 100%)
-8. [`pages/pacotes.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/pacotes.html) — Pacotes de festa e pedido de orçamento via WhatsApp (Html + Css reutilizado)
-9. [`pages/privacidade.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/privacidade.html) — Política de Privacidade (Html + Css 100%)
-10. [`pages/termos.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/termos.html) — Termos de Uso (Html + Css 100%)
+1. [`index.html`](https://marcosukyo.github.io/MundoDaDiversao/index.html) — Página inicial
+2. [`pages/quem-somos.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/quem-somos.html) — História, missão, valores e equipe
+3. [`pages/oficina.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/oficina.html) — Oficinas criativas (vídeo)
+4. [`pages/servicos.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/servicos.html) — Tipos de festa atendidos
+5. [`pages/galeria.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/galeria.html) — Galeria de fotos
+6. [`pages/feedback.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/feedback.html) — Depoimentos e formulário de feedback
+7. [`pages/faq.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/faq.html) — Perguntas frequentes e formulário de dúvidas
+8. [`pages/pacotes.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/pacotes.html) — Pacotes de festa e pedido de orçamento via WhatsApp
+9. [`pages/privacidade.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/privacidade.html) — Política de Privacidade
+10. [`pages/termos.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/termos.html) — Termos de Uso
 
 ## 🎨 Identidade Visual
+
+Seguindo o pedido da cliente (cores e slogan do Instagram e do site antigo):
 
 | Cor | Uso | HEX |
 |---|---|---|
@@ -94,27 +99,51 @@ Durante a conversa, a equipe apresentou a proposta do projeto acadêmico e Victo
 | Amarelo | Acento | `#F4B400` |
 | Escuro | Seções dark / rodapé | `#241C14` |
 
-Tipografia: **Baloo 2** (títulos) e **Nunito** (texto corrido), via Google Fonts.
+Tipografia: **Baloo 2** (títulos) e **Nunito** (texto corrido), via Google Fonts. Slogan: *"Diversão e aprendizado em cada brincadeira."*
+
+## 🛠️ Desenvolvimento
+
+- **Decisões de estrutura:** HTML semântico (`header`, `nav`, `main`, `section`, `article`, `footer`), um único `style.css` reutilizado nas 10 páginas, layout com Grid e Flexbox e menu de navegação igual em todas as páginas.
+- **Conteúdo:** levantado na entrevista com a Victoria (serviços, diferenciais, missão e valores, horário, canais de contato). Fotos de crianças foram selecionadas com cuidado, pois a cliente pediu atenção à proteção de imagem.
+- **Referência de layout:** site indicado pela cliente, <https://www.rcrecreacao.com.br/>.
+- **Formulários:** feedback e dúvidas com validação nativa HTML5 (`required`, `minlength`, `type="email"`); o orçamento é feito pelo WhatsApp, a pedido da cliente.
+- **Pesquisa de layout e testes de paleta/tipografia:** _(grupo: descrever aqui os sites pesquisados e as paletas/fontes testadas)_
+
+## 🤖 Uso de IA
+
+- **Modelo utilizado:** Claude (Anthropic).
+- **Para que usamos:**
+  - **Validação no W3C:** interpretar os erros e avisos do validador (HTML e CSS) e indicar como corrigi-los.
+  - **Correção de código:** revisar HTML e CSS, achar links quebrados e inconsistências entre as páginas.
+  - **Escolha da paleta de cores:** comparar combinações a partir das cores da logo e do Instagram da empresa, que a cliente pediu para manter.
+  - **Encaixe das imagens:** ajustar tamanho, recorte e proporção das fotos (`object-fit`, molduras e grids) para ficarem bem distribuídas no site.
+- **Motivação:** ganhar tempo em tarefas repetitivas e conseguir um site mais acessível e padronizado.
+- **Verificação das respostas:** nenhuma sugestão foi aceita sem teste; o resultado foi conferido no W3C Validator e no CSS Validation Service e visualmente no navegador, em diferentes tamanhos de tela.
+
+**Como seria obter o mesmo resultado com IA:** descrever o briefing completo (organização, páginas, paleta, restrições de semântica), pedir o código por etapas (mapa do site → HTML → CSS), revisar cada etapa e validar no W3C.
 
 ## ✅ Requisitos Técnicos da Entrega
 
 - [x] Estrutura semântica (`header`, `nav`, `main`, `section`, `article`, `footer`)
-- [x] 10 páginas HTML interligadas
-- [x] Recurso de vídeo (`<video>` em `oficina.html`)
-- [x] Recurso de áudio (`<audio>`) — em andamento
-- [x] Formulário de contato com validação nativa HTML5
-- [x] Formulário de orçamento com validação nativa HTML5 (Feito pelo WhatsApp)
-- [x] Validação W3C sem erros — a confirmar antes da entrega final
+- [x] Páginas HTML interligadas por menu consistente
+- [x] Recurso de vídeo (`<video>` em `oficina.html` e `feedback.html`)
+- [x] Recurso de áudio (`<audio>`)
+- [x] Uso de SVG em uma das imagens
+- [x] Resposta a eventos com JavaScript em ao menos um componente
+- [x] Formulários com validação nativa HTML5
+- [x] `contato.html` e `orcamento.html`
+- [x] CSS único, responsivo, com Grid e Flexbox
+- [x] Validação W3C (HTML e CSS) comprovada em todas as páginas
 
 ## 🧠 Conclusão e Aprendizados
 
-Essa etapa exigiu bem mais cuidado do que parecia à primeira vista. Estruturar 10 páginas usando semântica HTML corretamente (`header`, `nav`, `main`, `section`, `article`, `footer`) trouxe decisões que não são óbvias no dia a dia — como escolher entre `section` e `article` pra cada bloco, ou garantir que cada página tivesse só um `h1` e uma hierarquia de headings coerente, pontos que pesam bastante na validação do W3C.
+Essa etapa exigiu bem mais cuidado do que parecia à primeira vista. Estruturar as páginas com semântica HTML correta trouxe decisões que não são óbvias no dia a dia — como escolher entre `section` e `article`, ou garantir um único `h1` por página com hierarquia de headings coerente, pontos que pesam na validação do W3C.
 
-Organizar o repositório em `assets/` (css, img, video, audio) e `pages/` desde o início facilitou reaproveitar componentes prontos — como os cards de serviço, o bloco "Como funciona" e o FAQ em accordion — sem precisar duplicar CSS, já que todo o projeto usa um único arquivo `style.css`.
+Organizar o repositório em `assets/` e `pages/` desde o início facilitou reaproveitar componentes (cards, "Como funciona", FAQ em accordion) sem duplicar CSS, já que todo o projeto usa um único `style.css`.
 
-Trabalhar em equipe com Git e GitHub também foi parte importante do aprendizado: alinhar quem mexia em qual página, evitar conflitos de merge e manter um padrão de commits ajudou a não perder trabalho no meio do caminho.
+Trabalhar em equipe com Git e GitHub também foi parte importante do aprendizado: alinhar quem mexia em qual página, evitar conflitos de merge e manter um padrão de commits.
 
-Por fim, basear o conteúdo do site na entrevista real com a Victoria, fundadora do Mundo da Diversão, deixou claro como decisões de conteúdo (o que virou pacote, o que virou FAQ, o que virou depoimento) ficam muito mais sólidas quando partem de informação real da empresa, em vez de conteúdo genérico.
+Por fim, basear o conteúdo na entrevista real com a Victoria deixou claro como as decisões de conteúdo (o que virou pacote, FAQ ou depoimento, e o que não pode aparecer, como valores) ficam mais sólidas quando partem de informação real da empresa.
 
 ---
 
