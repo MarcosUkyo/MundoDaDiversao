@@ -24,6 +24,8 @@ Projeto acadêmico da disciplina de Desenvolvimento Frontend para Web (Entrega A
   - [feedback.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Ffeedback.html)
   - [faq.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Ffaq.html)
   - [pacotes.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Fpacotes.html)
+  - [orcamento.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Forcamento.html)
+  - [contato.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Fcontato.html)
   - [privacidade.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Fprivacidade.html)
   - [termos.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fpages%2Ftermos.html)
 - **Validação W3C (CSS):** [`assets/css/style.css`](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmarcosukyo.github.io%2FMundoDaDiversao%2Fassets%2Fcss%2Fstyle.css)
@@ -57,7 +59,12 @@ Durante a conversa, Victoria contou a história da empresa (criada em 2025 a par
 ├── assets/
 │   ├── css/
 │   │   └── style.css       # CSS único do projeto
-│   ├── img/                # imagens, logo, ícones
+│   ├── js/
+│   │   ├── musica.js       # botão de música de fundo (<audio>)
+│   │   ├── mascaras.js     # máscaras de telefone e CEP
+│   │   └── forms.js        # contador de caracteres, rascunho e "lembrar meus dados"
+│   ├── img/                # imagens, logo, ícones e SVGs
+│   ├── audio/              # música de fundo
 │   └── videos/             # vídeos (oficina e depoimento)
 └── pages/
     ├── quem-somos.html
@@ -67,6 +74,8 @@ Durante a conversa, Victoria contou a história da empresa (criada em 2025 a par
     ├── feedback.html
     ├── faq.html
     ├── pacotes.html
+    ├── orcamento.html
+    ├── contato.html
     ├── privacidade.html
     └── termos.html
 ```
@@ -80,9 +89,11 @@ Durante a conversa, Victoria contou a história da empresa (criada em 2025 a par
 5. [`pages/galeria.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/galeria.html) — Galeria de fotos
 6. [`pages/feedback.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/feedback.html) — Depoimentos e formulário de feedback
 7. [`pages/faq.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/faq.html) — Perguntas frequentes e formulário de dúvidas
-8. [`pages/pacotes.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/pacotes.html) — Pacotes de festa e pedido de orçamento via WhatsApp
-9. [`pages/privacidade.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/privacidade.html) — Política de Privacidade
-10. [`pages/termos.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/termos.html) — Termos de Uso
+8. [`pages/pacotes.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/pacotes.html) — Pacotes de festa
+9. [`pages/orcamento.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/orcamento.html) — Pedido de orçamento (formulário com máscaras e validação HTML5)
+10. [`pages/contato.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/contato.html) — Formulário de contato e outros canais
+11. [`pages/privacidade.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/privacidade.html) — Política de Privacidade
+12. [`pages/termos.html`](https://marcosukyo.github.io/MundoDaDiversao/pages/termos.html) — Termos de Uso
 
 ## 🎨 Identidade Visual
 
@@ -103,10 +114,11 @@ Tipografia: **Baloo 2** (títulos) e **Nunito** (texto corrido), via Google Font
 
 ## 🛠️ Desenvolvimento
 
-- **Decisões de estrutura:** HTML semântico (`header`, `nav`, `main`, `section`, `article`, `footer`), um único `style.css` reutilizado nas 10 páginas, layout com Grid e Flexbox e menu de navegação igual em todas as páginas.
+- **Decisões de estrutura:** HTML semântico (`header`, `nav`, `main`, `section`, `article`, `footer`), um único `style.css` reutilizado nas 12 páginas, layout com Grid e Flexbox e menu de navegação igual em todas as páginas.
 - **Conteúdo:** levantado na entrevista com a Victoria (serviços, diferenciais, missão e valores, horário, canais de contato). Fotos de crianças foram selecionadas com cuidado, pois a cliente pediu atenção à proteção de imagem.
 - **Referência de layout:** site indicado pela cliente, <https://www.rcrecreacao.com.br/>.
-- **Formulários:** feedback e dúvidas com validação nativa HTML5 (`required`, `minlength`, `type="email"`); o orçamento é feito pelo WhatsApp, a pedido da cliente.
+- **Formulários:** contato, orçamento, feedback e dúvidas com validação nativa HTML5 (`required`, `pattern`, `minlength`, `type="email"`, `type="tel"`, `min`/`max`) e máscaras de telefone e CEP em JavaScript; os valores continuam sendo passados só pelo WhatsApp, a pedido da cliente.
+- **JavaScript:** música de fundo com `<audio>` (`musica.js`), máscaras de digitação (`mascaras.js`) e recursos de formulário com `sessionStorage`/`localStorage` (`forms.js`).
 - **Pesquisa de layout e testes de paleta/tipografia:** _(grupo: descrever aqui os sites pesquisados e as paletas/fontes testadas)_
 
 ## 🤖 Uso de IA
