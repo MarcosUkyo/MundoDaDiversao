@@ -50,6 +50,8 @@ Durante a conversa, Victoria contou a história da empresa (criada em 2025 a par
 
 - 📄 [Entrevista_Levantamento_Requisitos_Mundo-da-Diversão](https://acadcruzeirodosul-my.sharepoint.com/:w:/g/personal/marcos_cunha008_cs_cruzeirodosul_edu_br/IQB1h5tKD1zyRZ6T_7FYgdqyAb0CU4KNhOA4OEOBibnhdsM?e=ZcTexj)
 
+![Comprovante do contato com a entrevistada do Mundo da Diversão](assets/img/Comprovante.jpeg)
+
 ## 🗂️ Estrutura do Projeto
 
 ```
