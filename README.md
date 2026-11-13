@@ -2,6 +2,14 @@
 
 Projeto acadêmico da disciplina de Desenvolvimento Frontend para Web (Entrega A2) — Prof. Cid Andrade.
 
+> ## 🎬 VÍDEO DE APRESENTAÇÃO DO PROJETO
+>
+> ### 👉 [**CLIQUE AQUI PARA ASSISTIR AO VÍDEO NO YOUTUBE**](https://youtu.be/W2NE32mZPRQ?si=WWlQrzRvoX3eLzyA) 👈
+>
+> 🔗 https://youtu.be/W2NE32mZPRQ?si=WWlQrzRvoX3eLzyA
+ 
+---
+
 ## 👥 Integrantes do Grupo
 
 | Nome completo | RGM | Usuário GitHub |
